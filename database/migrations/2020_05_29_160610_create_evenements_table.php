@@ -17,7 +17,7 @@ class CreateEvenementsTable extends Migration
             $table->bigIncrements('id');
             $table->string('titre');
             $table->boolean('enligne');
-            $table->string('filename')->nullable();
+            $table->string('filename');
             $table->text('contenu');
             $table->string('files')->nullable();
             $table->timestamps();
